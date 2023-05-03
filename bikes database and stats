@@ -1,0 +1,22 @@
+CREATE TABLE bikes (id INTEGER PRIMARY KEY, brand TEXT, style TEXT, rating INTEGER, price INTEGER, type TEXT);
+
+INSERT INTO bikes VALUES (1, "nishiki", " women's pueblo", 7, 299, "mountain");
+INSERT INTO bikes VALUES (2, "nishiki", "men's pueblo", 7, 299, "mountain");
+INSERT INTO bikes VALUES (3, "nishiki", "youth pueblo", 8, 239, "mountain");
+INSERT INTO bikes VALUES (4, "GT", "aggressor pro", 10, 799, "mountain");
+INSERT INTO bikes VALUES (5, "GT", "laguna pro", 10, 799, "mountain");
+INSERT INTO bikes VALUES (6, "schwinn", "men's fordham", 9, 499, "hybrid");
+INSERT INTO bikes VALUES (7, "schwinn", "women's fordham", 9, 499, "hybrid");
+INSERT INTO bikes VALUES (8, "schwinn", "gtx3",8, 449, "hybrid");
+INSERT INTO bikes VALUES (9, "nishiki", "men's tamarack",4, 349, "comfort");
+INSERT INTO bikes VALUES (10, "nishiki", "women's tamarack", 8, 349, "comfort");
+INSERT INTO bikes VALUES (11, "GT", "kid's stomper pro", 7, 519, "mountain");
+INSERT INTO bikes VALUES (12, "schwinn", "largo", 7, 399, "comfort");
+INSERT INTO bikes VALUES (13, "kulana", "makana",7, 319, "comfort");
+INSERT INTO bikes VALUES (14, "schwinn", "standpoint", 6, 449, "mountain");
+INSERT INTO bikes VALUES (15, "pacific", "girls' gleam", 6, 109, "comfort");
+SELECT * FROM bikes;
+
+SELECT brand, style, rating FROM bikes WHERE (rating >8);
+
+SELECT brand, style, price FROM bikes WHERE (price <400 AND rating >7);
