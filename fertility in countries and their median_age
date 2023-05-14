@@ -222,6 +222,7 @@ INSERT INTO countries(name,population,percent_one_year_change,population_change,
 /*showing countries with low median age and low fertility*/
 
 SELECT name FROM countries WHERE median_age < 30 AND fertility_rate < 2.0;
+
 /*showing countries with low media age and high fertility*/
 
 SELECT name, fertility_rate FROM countries
